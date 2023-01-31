@@ -6,6 +6,10 @@
 <!doctype html>
 <html lang="en">
   <head>
+    {% include google-analytics.html %}
+    <script type="application/ld+json">
+      {{ page.bioschemas | jsonify }}
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="last-modified" content="{{ site.time }}">
