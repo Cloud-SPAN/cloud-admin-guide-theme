@@ -1,19 +1,19 @@
-To take the course **Automated Management of AWS Instances** you are expected to
-- use a laptop or desktop computer with access to the Internet and a browser (such as Chrome) installed.
+To take the course **Automated Management of AWS Instances** you are expected to:
+- use a laptop or desktop computer with access to the Internet and a browser (such as Chrome) installed
 - install Git Bash --- Windows users
-- install Bash --- Mac users
+- install /update Bash --- Mac users
 
 # Overview
 
-The course teaches how to use a set of Bash scripts to create and manage (configure, stop, start and delete) one or multiple AWS instances (Linux virtual machines) with a single invocation of a script. 
+The course teaches how to use a set of Bash scripts to create and manage (configure, stop, start and delete) one or multiple AWS instances with a single invocation of a script. 
 
-To run the scripts you need to use a **terminal** that runs the Bash shell. The terminal is a program that enables you to enter commands through the keyboard to instruct the operating sytem in your computer the operations you want to be performed such as running a program or copying or deleting a file. The terminal is also widely known as the **shell** and the **command-line** interface (CLI). In this course we mostly use the term "terminal" and occasionally "shell" and "command line" where more meaningful. **Bash** stands for *Bourne Again Shell*. Bash is a powerful command programming language that was developed to serve as the CLI for the UNIX operating system. It is the most widely used shell and has a long and interesting history which you can read in the [Wikipedia entry for Bash shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
+To run the scripts you need to use a **terminal** that runs the Bash shell. The terminal is a program that enables you to enter commands through the keyboard to instruct the operating sytem in your computer the operations you want to be performed such as running a program or copying or deleting files. The terminal is also widely known as the **shell** and the **command-line** interface (CLI). In this course we mostly use the term "terminal" and occasionally "shell" and "command line" where more meaningful. **Bash** stands for *Bourne Again Shell*. Bash is a powerful command programming language that was developed to serve as the CLI for the UNIX operating system. It is the most widely used shell and has a long and interesting history which you can read in the [Wikipedia entry for Bash shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
 **Linux users** don't need to install any software as the terminal in Linux systems runs Bash by default.
 
-**Windows users** will need to install **Git for Windows** on their computer as described below **prior to the course**. Git for Windows includes `Git Bash` which is a Windows version of the Unix Bash shell. Git for Windows also includes `ssh` (secure shell) which is used to login to the AWS instances created with the scripts. **If you are taking this course through an in-person or online workshop**, a Linux AWS instance where you will install and run the scripts will be made available to you at no cost by the Cloud-SPAN team --- you will login to that instance with `ssh`.
+**Windows users** will need to install **Git for Windows** on their computer as described below **prior to the course**. Git for Windows includes `Git Bash` which is a Windows version of the Unix Bash shell. Git for Windows also includes `ssh` (secure shell) which is used to login to the AWS instances created with the scripts. **If you are taking this course at an in-person or online workshop**, a Linux AWS instance where you will install and run the scripts will be made available to you at no cost by the Cloud-SPAN team --- but you will need to login to that instance with `ssh`.
 
-**Mac users** will need install or update Bash on their computer as described below. Mac computers usually have installed both the Zsh shell and the Bash shell; and the **terminal** runs Zsh by default. Zsh and the Bash version installed (3.2.57 or so) cannot run the scripts that manage AWS instances. Hence you need to update Bash (the version we updated to in early 2023 was 5.2.15). Note that you can "run" the scripts from your terminal that runs Zsh, but Zsh will then invoke Bash to actually run the scripts because the first line of each script is this: `#!/usr/bin/env bash` --- which will instruct your terminal Zsh to run Bash to **actually run** the script. 
+**Mac users** will need to install or update Bash on their computer as described below. Mac computers usually have installed both the Zsh shell and the Bash shell; and the **terminal** runs Zsh by default. Zsh and the Bash version usually installed (3.2.57 or so) cannot run the scripts that manage AWS instances. Hence you need to update Bash (the version we updated to in early 2023 was 5.2.15). Note that you can "run" the scripts from your terminal that runs Zsh, but Zsh will then invoke Bash to actually run the scripts because the first line of each script is this: `#!/usr/bin/env bash` --- which will instruct your terminal Zsh to run Bash to **actually run** the script. 
 
 > ## Install Git Bash --- Windows users
 > 
@@ -74,12 +74,12 @@ To run the scripts you need to use a **terminal** that runs the Bash shell. The 
 > 
 > <img src="./fig/gitbash-launch-icon.png" alt="Git Bash launch icon" width="200"/> 
 > 
-> **Exit** Git Bash by pressing Ctrl-d -- that is pressing the keys Ctrl and d simultaneously.
+> **Exit** Git Bash by pressing the keys `Ctrl` and `d` (`Ctrl-d`) simultaneously.
 >
 {: .solution}
 
 > ## Install /Update Bash --- Mac users
-> To install or update Bash, open a terminal and enter the `brew` command in the code box below:
+> To install or update Bash, open a terminal and enter the `brew` command in the code box below. You can copy-paste the command but don't include the dollar sign `$`.
 > ~~~
 > $ brew install bash
 > ~~~
