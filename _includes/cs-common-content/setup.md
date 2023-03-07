@@ -1,21 +1,21 @@
-To take this course you are expected to
+To take the course **Automated Management of AWS Instances** you are expected to
 - use a laptop or desktop computer with access to the Internet and a browser (such as Chrome) installed.
 - install Git Bash --- Windows users
 - install Bash --- Mac users
 
 # Overview
 
-The software and data used for analysis during the course are hosted on an Amazon Web Services (AWS) virtual machine (VM) instance. A copy of such instance that requires no previous setup by you will be made available to you at no cost by the Cloud-SPAN team. 
+The course teaches how to use a set of Bash scripts to create and manage (configure, stop, start and delete) one or multiple AWS instances (Linux virtual machines) with a single invocation of a script. 
 
-To accesss and use the resources in your AWS instance from your personal computer, you will use a command-line interface (**CLI**) program that is widely known as the **shell** or **terminal**. The shell is available by default for Linux and Mac users (so they don't need to install any software). 
+To run the scripts you need to use a **terminal** that runs the Bash shell. The terminal is a program that enables you to enter commands through the keyboard to instruct the operating sytem in your computer the operations you want to be performed such as running a program or copying or deleting a file. The terminal is also widely known as the **shell** and the **command-line** interface (CLI). In this course we mostly use the term "terminal" and occasionally "shell" and "command line" where more meaningful. **Bash** stands for *Bourne Again Shell*. Bash is a powerful command programming language that was developed to serve as the CLI for the UNIX operating system. It is the most widely used shell and has a long and interesting history which you can read in the [Wikipedia entry for Bash shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 
-**Windows users** will need to install Git for Windows on their computer as described below **prior to the course**. Git includes **Git Bash** which is a Windows version of the Unix Bash shell, the most widely used shell and the default shell in Linux systems. 
+**Linux users** don't need to install any software as the terminal in Linux systems runs Bash by default.
 
-You will need to use a laptop or desktop to take this course. Due to the need both to follow the instructor in zoom and to perform analyses, **tablets** and **ipads are not suitable** for using during this course.  Having both an up to date browser and a stable internet connection is important.
+**Windows users** will need to install **Git for Windows** on their computer as described below **prior to the course**. Git for Windows includes `Git Bash` which is a Windows version of the Unix Bash shell. Git for Windows also includes `ssh` (secure shell) which is used to login to the AWS instances created with the scripts. **If you are taking this course through an in-person or online workshop**, a Linux AWS instance where you will install and run the scripts will be made available to you at no cost by the Cloud-SPAN team --- you will login to that instance with `ssh`.
 
-Before the course you will receive via email the information that you will need to login to your AWS instance during the course.   
+**Mac users** will need install or update Bash on their computer as described below. Mac computers usually have installed both the Zsh shell and the Bash shell; and the **terminal** runs Zsh by default. Zsh and the Bash version installed (3.2.57 or so) cannot run the scripts that manage AWS instances. Hence you need to update Bash (the version we updated to in early 2023 was 5.2.15). Note that you can "run" the scripts from your terminal that runs Zsh, but Zsh will then invoke Bash to actually run the scripts because the first line of each script is this: `#!/usr/bin/env bash` --- which will instruct your terminal Zsh to run Bash to **actually run** the script. 
 
-> ## Installing Git Bash in your Windows computer
+> ## Install Git Bash --- Windows users
 > 
 > The steps below correspond to the installation of Git for Windows version 2.33.1 from scratch. The installation of a more recent version, or updating a previously installed version, may show different wording in the screen messages mentioned below or may vary slightly in the number of steps to follow. Choose as many of the options below as possible.
 > 
@@ -75,7 +75,41 @@ Before the course you will receive via email the information that you will need 
 > <img src="./fig/gitbash-launch-icon.png" alt="Git Bash launch icon" width="200"/> 
 > 
 > **Exit** Git Bash by pressing Ctrl-d -- that is pressing the keys Ctrl and d simultaneously.
-> 
-> Bash stands for *Bourne Again Shell*. In addition to be a CLI, Bash shell is a powerful command programming language and has a long and interesting history which you can read in the [Wikipedia entry for Bash shell](https://en.wikipedia.org/wiki/Bash_(Unix_shell)).
 >
+{: .solution}
+
+> ## Install /Update Bash --- Mac users
+> To install or update Bash, open a terminal and enter the `brew` command in the code box below:
+> ~~~
+> $ brew install bash
+> ~~~
+> {: .bash}
+> 
+> You will see an output like the following:
+> ~~~
+> Running `brew update --auto-update`...
+> ==> Downloading https://formulae.brew.sh/api/formula.jws.json
+> ######################################################################## 100.0%
+> ==> Downloading https://formulae.brew.sh/api/cask.jws.json
+> ######################################################################## 100.0%
+> ==> Auto-updated Homebrew!
+> Updated 1 tap (aws/aws).
+>
+> ==> Fetching bash
+> ==> Downloading https://ghcr.io/v2/homebrew/core/bash/manifests/5.2.15
+> ######################################################################## 100.0%
+> ==> Downloading https://ghcr.io/v2/homebrew/core/bash/blobs/> sha256:05a5f9435c9e9ffe8377b03e0ca6b27bbb32cc
+> ==> Downloading from https://pkg-containers.githubusercontent.com/ghcr1/blobs/> sha256:05a5f9435c9e9ffe8377
+> ######################################################################## 100.0%
+> ==> Pouring bash--5.2.15.monterey.bottle.tar.gz
+> 🍺  /usr/local/Cellar/bash/5.2.15: 162 files, 11.7MB
+> ==> Running `brew cleanup bash`...
+> Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
+> Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
+> ~~~
+> {: .output}
+> 
+> You need to have the package manager `brew` installed to install /update Bash. If you 
+> 
+> 
 {: .solution}
