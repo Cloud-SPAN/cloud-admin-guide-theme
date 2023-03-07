@@ -114,7 +114,7 @@ To run the scripts you need to use a **terminal** that runs the Bash shell. The 
 > $ bash --version
 > ~~~
 > {: .bash}
-
+>
 > If the package manager `brew` is not installed in your computer, you can install it with the command below (from the [brew website](https://brew.sh/)):
 > 
 > ~~~
