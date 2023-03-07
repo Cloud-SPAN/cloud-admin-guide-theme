@@ -109,7 +109,17 @@ To run the scripts you need to use a **terminal** that runs the Bash shell. The 
 > ~~~
 > {: .output}
 > 
-> You need to have the package manager `brew` installed to install /update Bash. If you 
+> Check the Bash version installed with the command:
+> ~~~
+> $ bash --version
+> ~~~
+> {: .bash}
+
+> If the package manager `brew` is not installed in your computer, you can install it with the command below (from the [brew website](https://brew.sh/)):
 > 
+> ~~~
+> $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+> ~~~
+> {: .bash}
 > 
 {: .solution}
