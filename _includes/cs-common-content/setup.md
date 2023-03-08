@@ -5,7 +5,7 @@ To take the course **Automated Management of AWS Instances** you are expected to
 
 This *Setup* section provides instructions to install Git Bash on Windows computers and to install /update Bash in Mac computers.
 
-### Introduction
+### **Introduction**
 
 The course teaches how to use a set of Bash scripts to create and manage (configure, stop, start and delete) one or multiple AWS instances with a single invocation of a script. 
 
@@ -15,7 +15,7 @@ To run the scripts you need to use a **terminal** that runs the Bash shell. The 
 
 **Windows users** will need to install **Git for Windows** on their computer as described below **prior to the course**. Git for Windows includes `Git Bash` which is a Windows version of the Unix Bash shell. Git for Windows also includes `ssh` (secure shell) which is used to login to the AWS instances created with the scripts. **If you are taking this course at an in-person or online workshop**, a Linux AWS instance where you will install and run the scripts will be made available to you at no cost by the Cloud-SPAN team --- but you will need to login to that instance with `ssh`.
 
-**Mac users** will need to install or update Bash on their computer as described below. Mac computers usually have installed both the Zsh shell and the Bash shell; and the **terminal** runs Zsh by default. Zsh and the Bash version usually installed (3.2.57 or so) cannot run the scripts that manage AWS instances. Hence you need to update Bash (the version we updated to in early 2023 was 5.2.15). Note that you can "run" the scripts from your terminal that runs Zsh, but Zsh will then invoke Bash to actually run the scripts because the first line of each script is this: `#!/usr/bin/env bash` --- which will instruct your terminal Zsh to run Bash to **actually run** the script. 
+**Mac users** will need to install or update Bash on their computer as described below. Mac computers usually have installed both the Zsh shell and the Bash shell; and the **terminal** runs Zsh by default. Zsh and the Bash version usually installed (3.2.57 or so) cannot run the scripts that manage AWS instances. Hence you need to update Bash (the version we updated to in early 2023 was 5.2.15). Note that you can "run" the scripts from your terminal that runs Zsh, but Zsh will then invoke Bash to actually run the scripts because the first line of each script is this: `#!/usr/bin/env bash` --- which will instruct your terminal Zsh to run Bash to **actually run** each script. 
 
 > ## Install Git Bash --- Windows users
 > 
