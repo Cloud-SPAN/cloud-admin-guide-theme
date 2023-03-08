@@ -15,11 +15,11 @@ To run the scripts you need to use a **terminal** that runs the Bash shell. The 
 
 **Windows users** will need to install **Git for Windows** on their computer as described below **prior to the course**. Git for Windows includes `Git Bash`, a Windows version of the Unix Bash shell, and the `ssh` (secure shell) program which is used to login to the AWS instances created with the scripts. 
 
-**Mac users** will need to install or update Bash on their computer as described below. Mac computers usually have installed both the Zsh shell and the Bash shell; and the **terminal** runs Zsh by default. Zsh and the Bash version usually installed (3.2.57 or so) **cannot** run the scripts that manage AWS instances. Hence you need to update Bash (the version we updated to in early 2023 was 5.2.15). Note that you can "run" the scripts from a terminal that runs Zsh, but as the first line of each script is `#!/usr/bin/env bash`, a Zsh terminal will run Bash to **actually run** each script. 
+**Mac users** will need to install or update Bash on their computer as described below. Mac computers usually have installed both the Zsh shell and the Bash shell; and the **terminal** runs Zsh by default. Zsh and the Bash version usually installed (3.2.57 or so) **cannot** run the scripts that manage AWS instances. Hence you need to update Bash (the version we updated to in early 2023 was 5.2.15). Note that you can "run" the scripts from a terminal that runs Zsh, but as the first line of each script is this `#!/usr/bin/env bash`, a Zsh terminal will run Bash to **actually run** each script. 
 
-**All users**: if you are taking this course **at an in-person or online workshop**, a Linux AWS instance will be made available to you (at no cost by the Cloud-SPAN team) wherein you will install and run the scripts that manage AWS instances. The Linux instance is to be accessed with `ssh`, and hence **Windows users** do need to install Git for Windows prior to such a workshop.
+**All users**: if you are taking this course at an **in-person** or **online workshop**, a Linux AWS instance will be made available to you (at no cost by the Cloud-SPAN team) wherein you will install and run the scripts that manage AWS instances. The Linux instance is to be accessed with `ssh`, and hence **Windows users** do need to install Git for Windows prior to such a workshop.
 
-> ## Install Git Bash --- Git for Windows users
+> ## Install Git Bash (Git for Windows) --- Windows users
 > 
 > The steps below correspond to the installation of Git for Windows version 2.33.1 from scratch. The installation of a more recent version, or updating a previously installed version, may show different wording in the screen messages mentioned below or may vary slightly in the number of steps to follow. Choose as many of the options below as possible.
 > 
