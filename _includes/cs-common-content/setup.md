@@ -5,7 +5,7 @@ To take the course **Automated Management of AWS Instances** you are expected to
 
 This *Setup* section provides instructions to install Git Bash on Windows computers and to install /update Bash in Mac computers.
 
-## Introduction
+### Introduction
 
 The course teaches how to use a set of Bash scripts to create and manage (configure, stop, start and delete) one or multiple AWS instances with a single invocation of a script. 
 
