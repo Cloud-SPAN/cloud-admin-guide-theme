@@ -1,9 +1,9 @@
 To take the course **Automated Management of AWS Instances** you are expected to:
 - use a laptop or desktop computer with access to the Internet and a browser (such as Chrome) installed
 - install Git Bash --- Windows users
-- install /update Bash --- Mac users
+- install or update Bash --- Mac users
 
-This *Setup* section provides instructions to install Git Bash on Windows computers and to install /update Bash in Mac computers.
+This *Setup* section provides instructions to install Git Bash on Windows computers and to install or update Bash in Mac computers.
 
 ### **Introduction**
 
@@ -80,7 +80,7 @@ To run the scripts you need to use a **terminal** that runs the Bash shell. The 
 >
 {: .solution}
 
-> ## Install /Update Bash --- Mac users
+> ## Install or update Bash --- Mac users
 > To install or update Bash, open a terminal and enter the `brew` command in the code box below. You can copy-paste the command but don't include the dollar sign `$`.
 > ~~~
 > $ brew install bash
