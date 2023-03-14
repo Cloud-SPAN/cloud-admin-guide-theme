@@ -47,7 +47,7 @@ To run the scripts you need to use a **terminal** that runs the Bash shell. The 
 >   - **NB**: you may need to click on the dropdown menu and to **scroll up** with the mouse to see this option -- see the figure:
 > 
 <!-- >   <img src="./fig/git-installation-nano-option.png" alt="GIT installation nano option" width="600"/>  -->
-> ![Figure of window shwoing Git for Windows installation nano editor option.](https://github.com/Cloud-SPAN/cloud-admin-guide-theme/blob/main/_includes/cs-common-content/git-installation-nano-option.png){: width="900px"}
+> ![Figure of window showing Git for Windows installation nano editor option.](https://github.com/Cloud-SPAN/cloud-admin-guide-theme/blob/main/_includes/cs-common-content/git-installation-nano-option.png){: width="500px"}
 > 
 > - *Adjusting the name of the initial branch in new repositories*
 >   - keep the selected (or select the) option  **Let Git decide** and click on **Next**.
